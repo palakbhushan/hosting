@@ -47,12 +47,11 @@ body{
     
     
     width:70vw;
-  
-     margin-top: 16%; 
-     margin-left: 20%;
+    margin-top: 16%; 
+    margin-left: 20%;
     height:70vh;
-     background-color:rgba(0, 0, 0, 0.7);
-     font-size: ;
+    background-color:rgba(0, 0, 0, 0.7);
+    font-size: ;
     border: dotted red 5px;
     border-radius: 15px 1px; 
    
