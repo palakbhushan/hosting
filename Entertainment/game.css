@@ -44,15 +44,14 @@ body{
     position: absolute;
 }
 .container{
-    
-    
+   
     width:70vw;
     margin-top: 16%; 
     margin-left: 20%;
     height:70vh;
     background-color:rgba(0, 0, 0, 0.7);
     font-size: ;
-    border: dotted red 5px;
+    border: double rgb(11, 190, 235) 5px;
     border-radius: 15px 1px; 
    
 
@@ -60,23 +59,26 @@ body{
 
 
 .box{
-    background-color:darkcyan;
+    /* background-color:darkcyan; */
     width:50px;
     height: 50px;
     margin: 50px;
-    border: solid rgb(32, 143, 235) 1px;
+    /* border: solid rgb(32, 143, 235) 1px; */
     display: inline-block;
     animation: bounce ;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    font-size: 60px;
+    color: #202ccf;
 }
 
 .player{
-    background-color:tomato;
-    width:30px;
-    height: 50px;
+    /* background-color:tomato; */
+    color: #10a8ee;
+    width:30px;;
     margin: 30px;
+    height: 50px;
     margin-left: 5px;
     border: solid black 1px;
     display: inline-block;
@@ -86,6 +88,7 @@ body{
     animation-timing-function: linear;
     animation-duration: 7s;
     animation-play-state: paused;
+    font-size: 60px;
     
 }
 .container:active .player{
@@ -113,7 +116,7 @@ body{
 @keyframes moves{
 
     50%{
-        transform: translateY(130px) translateX(850px);
+        transform: translateY(130px) translateX(1000px);
     }
 }
 
@@ -125,12 +128,12 @@ body{
 
     50%{
             transform: translateY(300px);
-            background-color: black;
+            color: black;
             border-radius: 5px;
     }
 
     100%{
-        background-color: #ff0055;
+        color: #0a668a;
     }
     
 }
