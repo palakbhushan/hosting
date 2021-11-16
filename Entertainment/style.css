@@ -30,7 +30,7 @@ body{
     top: 10%;
     left: 50%;
     transform: translate(-50%);
-    text-shadow: 0 0 30px #ff0055;
+    text-shadow: 0 0 30px #2cd5ff;
 }
 
 .siteTitle i
@@ -46,13 +46,13 @@ body{
     width: 100%;
     height: 100%;
     z-index: -5;
-    background:#ff0055;
+    background:#03c2c2;
     opacity: 0.4;
     filter:blur(30px)
 }
 
 .loginCard{
-    border-radius: 1rem;
+    border-radius: 1rem 0rem;
     width:25rem;
     height: 20rem;
     position: absolute;
@@ -61,12 +61,13 @@ body{
     transform: translate(-50%);
     padding: 1rem;
     background:rgba(255, 255, 255, 0.2);
+    border: 3px double #ff0055;
 }
 
 .loginCard::before{
 
     content:'';
-    border-radius: 1rem;
+    border-radius: 1rem 0rem;
     position: absolute;
     background:rgba(255, 255, 255, 0.2);
     top: 0;
@@ -79,7 +80,7 @@ body{
 
 .loginCard::after{
 
-    border-radius: 1rem;
+    border-radius: 1rem orem ;
     content: '';
     position: absolute;
     top: -5px;
@@ -88,7 +89,7 @@ body{
     right: -5px;
     z-index: -1;
     pointer-events: none;
-    background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(45deg, rgb(100, 61, 126) 0%, rgb(74, 132, 240) 50%, rgb(245, 22, 133) 100%);
     animation: animate 5s linear infinite;
 }
 
@@ -152,9 +153,9 @@ body{
 
 
 
-.loginCard button:hover{
-    background: rgba(7, 4, 4, 0.7);
-}
+/* .loginCard button:hover{
+    
+} */
 
 .loginCard p 
 {
@@ -185,3 +186,84 @@ body{
 .blk{
     display: inline;
 }
+
+
+
+
+button{
+position: relative;
+display: inline-block;
+padding:15px,30px;
+color: #2196f3;
+Letter-spacing: 4px;
+text-decoration:none;
+font-size:24px;
+overflow:hidden;
+transition:0.2s;
+}
+
+button:hover{
+color:#255784;
+background: rgba(7, 4, 4, 0.7);
+box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+transition-delay: 0.2s;
+}
+
+
+button span
+{
+position: absolute;
+display: block;
+
+}
+
+button span:nth-child(1)
+{
+top:0;
+left: -100%;
+width: 100%;
+height: 2px;
+background:linear-gradient(90deg,transparent,#2196f3);
+}
+
+button:hover span:nth-child(1)
+{
+left: 100%;
+transition:2s;
+}
+
+
+button span:nth-child(3)
+{
+bottom:0;
+right: -100%;
+width: 100%;
+height: 2px;
+background:linear-gradient(270deg,transparent,#2196f3);
+}
+
+button:hover span:nth-child(3)
+{
+right: 100%;
+transition:2s;
+transition-delay:0.2s;
+}	
+
+
+button span:nth-child(2)
+{
+top:-100%;
+right:0 ;
+width: 2px;
+height: 100%;
+background:linear-gradient(180deg,transparent,#2196f3);
+}
+
+button:hover span:nth-child(2)
+{
+top: 100%;
+transition:2s;
+transition-delay:0.2s;
+}	
+
+

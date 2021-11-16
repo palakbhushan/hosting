@@ -35,17 +35,31 @@
                     <input id="email" type="email" placeholder="user email">
                 </div>
                 <div class="input">
-                    <input id="password" type="password" placeholder="password">
+                    <input id="password" type="password"  placeholder="password (7-digit)">
                 </div>
                 <div class="input blk">
-                    <button id="submit">signup</button>
+                    <button id="submit">
+                        <span></span>
+                         signup
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        
+                    </button>
                  
                 </div>
                 <div class="input blk">
-                    <button id="login">login</button>
+                    <button id="login">
+                        <span></span>
+                         login
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        
+                    </button>
+                    
                  
                 </div>
-                <p>Forgot Password <a href="#">Click here<i class="fas fa-headset"></i></a></p>
             </form>
 
 
@@ -91,6 +105,15 @@
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 // ..
+                if(password.length < 7)
+                {
+                    alert("password length is less then 7 character")
+                }
+                else
+                {
+                    alert("already registered")
+                }
+                
                 console.log(errorCode + errorMessage)
             });
          })
@@ -115,6 +138,7 @@
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 console.log(errorCode + errorMessage)
+                alert("wrong credential");
             });
          })
 
@@ -129,6 +153,7 @@
             .then(() => {
                 // Email verification sent!
                 // ...
+                
             });
          })
 
